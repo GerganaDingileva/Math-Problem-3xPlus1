@@ -14,24 +14,24 @@ namespace 3x+1
             {
                 Console.WriteLine();
                 Console.Write("Enter a number: ");
-                BigInteger x = BigInteger.Parse(Console.ReadLine());
+                BigInteger number = BigInteger.Parse(Console.ReadLine());
 
                 while (true)
                 {
-                    Console.Write(x + " ");
+                    Console.Write(number + " ");
                     
-                    if (x == 1)
+                    if (number == 1)
                     {
                         break;
                     }
                     
-                    if ((x & 1) == 1)
+                    if ((number & 1) == 1)
                     {
-                        x = x * 3 + 1;
+                        number = number * 3 + 1;
                     }
                     else
                     {
-                        x /= 2;
+                        number /= 2;
                     }
                 }
 		
