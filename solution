@@ -3,45 +3,46 @@ namespace 3x+1
 
     using System;
     using System.Numerics;
-	  				
+    
     public class Program
     {
-    	  public static void Main()
-     	  {
-	  	      int counter = 1;
-	    	    
-	    	    while (true)
-	    	    {
-		    	      Console.WriteLine();
-		    	      Console.Write("Enter a number: ");
-		  	        BigInteger x = BigInteger.Parse(Console.ReadLine());
-		  	        
-		    	      while (true)
-		  	        {
-		  		          Console.Write(x + " ");
-		  		          
-			  	          if (x == 1)
-			  	          {
-			  		            break;
-			  	          }
-			  	          
-			  	          if ((x & 1) == 1)
-			  	          {
-			  		            x = x * 3 + 1;
-			  	          }
-			  	              else
-		  		          {
-		  			            x /= 2;
-		  	            }
-		  	        }
-		  	        Console.WriteLine();
-		  	        counter++;
-		  	        
-		  	        if (counter == 15)
-		  	        {
-		  		          break;
-	  		        }
-	  	      }
-  	    }
+        public static void Main()
+        {
+            int counter = 1;
+            
+            while (true)
+            {
+                Console.WriteLine();
+                Console.Write("Enter a number: ");
+                BigInteger x = BigInteger.Parse(Console.ReadLine());
+
+                while (true)
+                {
+                    Console.Write(x + " ");
+                    
+                    if (x == 1)
+                    {
+                        break;
+                    }
+                    
+                    if ((x & 1) == 1)
+                    {
+                        x = x * 3 + 1;
+                    }
+                    else
+                    {
+                        x /= 2;
+                    }
+                }
+		
+                Console.WriteLine();
+                counter++;
+		
+                if (counter == 15)
+                {
+                    break;
+                }
+            }
+        }
     }
 }
