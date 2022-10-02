@@ -1,4 +1,4 @@
-namespace 3x+1
+namespace _3x+1
 {
     using System;
     using System.Numerics;
